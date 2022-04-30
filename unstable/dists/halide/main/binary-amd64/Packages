@@ -1,0 +1,208 @@
+Package: halide15-api-doc
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: all
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 58600
+Enhances: libhalide15-0-dev
+Multi-Arch: foreign
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: doc
+Filename: pool/main/h/halide/halide15-api-doc_15.0.0~20220430131808.gbp41b2d0_all.deb
+Size: 2380644
+SHA256: 48ec3cda6e950f1a5d7973026a1d9e81f413cea7e3f8ac741dd0de8cb17b6a2b
+SHA1: 8f2b89f9e590705b3c00955898a7966e02463c67
+MD5sum: c8147805a26e9498854b67fe22864bf2
+Description: fast, portable computation on images and tensors (Doxygen documentation)
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ .
+ This package contains Doxygen-generated API documentation.
+
+Package: libhalide15-0
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: amd64
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 24790
+Depends: libc6 (>= 2.33), libgcc-s1 (>= 3.0), libllvm14, libstdc++6 (>= 11)
+Multi-Arch: same
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: libs
+Filename: pool/main/h/halide/libhalide15-0_15.0.0~20220430131808.gbp41b2d0_amd64.deb
+Size: 6575688
+SHA256: 1aaf067ac0be3b1719f7269e72084814d0a191ff072e2ada9ab20e0c15a800e5
+SHA1: f0ac1915bbd6d38916c3925d2016a084a836f120
+MD5sum: 8122a7d08869443e3f5639797e3e7683
+Description: fast, portable computation on images and tensors
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ Halide currently targets:
+  * CPU architectures: X86, ARM, MIPS, Hexagon, PowerPC, RISC-V
+  * Operating systems: Linux, Windows, macOS, Android, iOS, Qualcomm QuRT
+  * GPU Compute APIs: CUDA, OpenCL, OpenGL Compute Shaders, Apple Metal,
+                     Microsoft Direct X 12
+ Rather than being a standalone programming language,
+ Halide is embedded in C++. This means you write C++ code that builds
+ an in-memory representation of a Halide pipeline using Halide's C++ API.
+ You can then compile this representation to an object file,
+ or JIT-compile it and run it in the same process.
+
+Package: libhalide15-0-dbgsym
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 27454
+Depends: libhalide15-0 (= 15.0.0~20220430131808.gbp41b2d0)
+Multi-Arch: same
+Priority: optional
+Section: debug
+Filename: pool/main/h/halide/libhalide15-0-dbgsym_15.0.0~20220430131808.gbp41b2d0_amd64.deb
+Size: 26467872
+SHA256: 09e6bb483dd583d9883bbc6efac0a59124bcd6aa12af13b94cf7fe6cbffa12c3
+SHA1: 74d9be5df47c0877aee308267e03f201326361f8
+MD5sum: 6f29e335f8afcea447ba38a57118f17d
+Description: debug symbols for libhalide15-0
+Build-Ids: fa2e89006199970f799568953e121e88bde2ddc3
+
+Package: libhalide15-0-dev
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: amd64
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 3654
+Depends: libhalide14-0 (= 15.0.0~20220430131808.gbp41b2d0), libc6 (>= 2.29), libgcc-s1 (>= 3.0), libhalide15-0 (>= 15.0.0~20220430131808.gbp41b2d0), libstdc++6 (>= 11), llvm-14-dev
+Suggests: libhalide15-doc, halide15-api-doc
+Multi-Arch: same
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/h/halide/libhalide15-0-dev_15.0.0~20220430131808.gbp41b2d0_amd64.deb
+Size: 760644
+SHA256: 55daa63f5e6ba26dc0f577bb948a0bfe7436c1e8565d2a5a2b67b74fea5e2206
+SHA1: f40e649c550051508d0fac49a85ca788bba19aba
+MD5sum: 2e6694655ec996a8fe2b80273c3dc326
+Description: fast, portable computation on images and tensors -- Development files
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ .
+ This package contains the files necessary to develop against libhalide.
+
+Package: libhalide15-0-dev-dbgsym
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 3045
+Depends: libhalide15-0-dev (= 15.0.0~20220430131808.gbp41b2d0)
+Multi-Arch: same
+Priority: optional
+Section: debug
+Filename: pool/main/h/halide/libhalide15-0-dev-dbgsym_15.0.0~20220430131808.gbp41b2d0_amd64.deb
+Size: 2782216
+SHA256: e32dc6a56085e6210700a199cae50c39b51807928b043774539f55ad9e3a4029
+SHA1: 44708c9426c020b54257f03a3b6aede2643d4652
+MD5sum: 662bf13eb7f1088c12450927e62a422e
+Description: debug symbols for libhalide15-0-dev
+Build-Ids: 04675a6eea415ef6e806a55d1c8fc0d07175b279 04e36bbec9469a63a875c99cd453432aaa97c16d 1436079f6cb7cdc71da2355b445aa46eda23625e 3663274791dcd8860733dcdeb5459eb823748183 8a3aff2b2d589d2b4b26afa12c800fa1685407a7 98db6efc6d9e440595424d5e4680c06119358135 fc03569b72a20d644edc9336ffb06ec49c43a2cc
+
+Package: libhalide15-doc
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: all
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 4654
+Enhances: libhalide15-0-dev
+Multi-Arch: foreign
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: doc
+Filename: pool/main/h/halide/libhalide15-doc_15.0.0~20220430131808.gbp41b2d0_all.deb
+Size: 4534348
+SHA256: 93b20cfb2d49e92d6c29e00751568a6e47493c1c1abbf3ccb8541bb4941863a3
+SHA1: 6347e13981a7ffe430570e53bddb7ae7ef85ef38
+MD5sum: 579137c38abea9ea81f1d537ebb69b51
+Description: fast, portable computation on images and tensors (C++ documentation)
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ .
+ This package contains README's and tutorials for using Halide from C++.
+
+Package: libhalideaot15-0
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: all
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 15
+Depends: libllvm14
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: libs
+Filename: pool/main/h/halide/libhalideaot15-0_15.0.0~20220430131808.gbp41b2d0_all.deb
+Size: 3660
+SHA256: f1a1e9021ced86d56e5d34783b0cdaf2da88010757bfe5fd82c299307f2f8ea0
+SHA1: fe5f921c5662869a31c05c3e6e3791ac247285a6
+MD5sum: 78fabde0af48235d82bebfa9fb2552a8
+Description: fast, portable computation on images and tensors (virtual library)
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ .
+ Software that uses halide can either rely on just-in-time compilation,
+ in which case it runtime-depends on/links to libhalide, or it can be compiled
+ ahead of time, when building the software, in which case it does not strictly
+ depend on halide. Former software should depend on this package instead, to
+ make it obvious which software needs to be rebuilt with newer halide versions.
+ .
+ This is an empty package.
+
+Package: python3-halide
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: amd64
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 3161
+Depends: libhalide15-0 (= 15.0.0~20220430131808.gbp41b2d0), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), python3 (<< 3.11), python3 (>= 3.10~)
+Suggests: python3-halide-doc
+Multi-Arch: same
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: python
+Filename: pool/main/h/halide/python3-halide_15.0.0~20220430131808.gbp41b2d0_amd64.deb
+Size: 518812
+SHA256: 6ed2a9cbe91a3ccb90bcbbb0a5575cdb5b62a4914a36b4b79ea7cdb5061d75b1
+SHA1: a0e23e02feaa4a81552d0f63d63f2e4824bc3c7b
+MD5sum: 4136978bbf63849b62d9a28f0121c907
+Description: fast, portable computation on images and tensors -- Python3 bindings
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ .
+ This package contains provides a Python binding that provides full support
+ for writing Halide embedded in Python without C++.
+
+Package: python3-halide-doc
+Source: halide
+Version: 15.0.0~20220430131808.gbp41b2d0
+Architecture: all
+Maintainer: Roman Lebedev <lebedev.ri@gmail.com>
+Installed-Size: 75
+Enhances: python3-halide
+Multi-Arch: foreign
+Homepage: https://halide-lang.org/
+Priority: optional
+Section: doc
+Filename: pool/main/h/halide/python3-halide-doc_15.0.0~20220430131808.gbp41b2d0_all.deb
+Size: 44056
+SHA256: e1610fec9bf587c3f5a24670dcf526c3cf7720161204200d4fd58aea6dba465e
+SHA1: 0503bfacd28ee8dfd10af89123638fa8687361a2
+MD5sum: 15013c4ec38e315ce11478a12b70fd07
+Description: fast, portable computation on images and tensors (Python3 documentation)
+ Halide is a programming language designed to make it easier to write
+ high-performance image and array processing code on modern machines.
+ .
+ This package contains tutorials for writing Halide embedded in Python.
+

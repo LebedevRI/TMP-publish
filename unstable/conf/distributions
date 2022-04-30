@@ -1,0 +1,5 @@
+Codename: halide
+Architectures: amd64 source
+Components: main
+UDebComponents: main
+SignWith: F948A40717A2BB9D0B39D15881BAA414C59F65D0
